@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomePage() {
   const mapContainer = useRef<HTMLDivElement>(null);
@@ -32,10 +33,10 @@ export default function HomePage() {
             <span className="text-green-700 font-bold text-xl">ADBNB</span>
           </div>
           <div className="flex gap-6 text-green-700 font-semibold">
-            <a href="/" className="hover:text-green-800 transition">Avaleht</a>
-            <a href="/register" className="hover:text-green-800 transition">Lisa oma pind</a>
-            <a href="/signup" className="hover:text-green-800 transition">Loo konto</a>
-            <a href="/login" className="hover:text-green-800 transition">Logi sisse</a>
+            <Link href="/" className="hover:text-green-800 transition">Avaleht</Link>
+            <Link href="/register" className="hover:text-green-800 transition">Lisa oma pind</Link>
+            <Link href="/signup" className="hover:text-green-800 transition">Loo konto</Link>
+            <Link href="/login" className="hover:text-green-800 transition">Logi sisse</Link>
             <a href="#contact" className="hover:text-green-800 transition">Kontakt</a>
           </div>
         </div>
@@ -78,26 +79,26 @@ export default function HomePage() {
               Vaata kaarti
             </button>
 
-            <a
+            <Link
               href="/register"
               className="bg-white/80 text-green-700 border border-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition"
             >
               Lisa oma pind
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/signup"
               className="bg-green-50 text-green-700 border border-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-100 transition"
             >
               Loo konto
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/login"
               className="bg-white/80 text-green-700 border border-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition"
             >
               Logi sisse
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -117,9 +118,9 @@ export default function HomePage() {
           © {new Date().getFullYear()} ADBNB. Kõik õigused kaitstud.
         </p>
         <p className="text-gray-500 mt-4">
-          <a href="/privacy" className="underline text-green-700">
+          <Link href="/privacy" className="underline text-green-700">
             Privaatsuspoliitika
-          </a>
+          </Link>
         </p>
       </section>
     </main>

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -10,11 +11,11 @@ export default function Navbar() {
           <span className="text-green-700 font-bold text-xl">ADBNB</span>
         </div>
         <div className="flex gap-6 text-green-700 font-semibold">
-          <a href="/" className="hover:text-green-800 transition">Avaleht</a>
-          <a href="/register" className="hover:text-green-800 transition">Lisa oma pind</a>
-          <a href="/signup" className="hover:text-green-800 transition">Loo konto</a>
-          <a href="/login" className="hover:text-green-800 transition">Logi sisse</a>
-          <a href="#contact" className="hover:text-green-800 transition">Kontakt</a>
+          <Link href="/" className="hover:text-green-800 transition">Avaleht</Link>
+          <Link href="/register" className="hover:text-green-800 transition">Lisa oma pind</Link>
+          <Link href="/signup" className="hover:text-green-800 transition">Loo konto</Link>
+          <Link href="/login" className="hover:text-green-800 transition">Logi sisse</Link>
+          <Link href="#contact" className="hover:text-green-800 transition">Kontakt</Link>
         </div>
       </div>
     </nav>
